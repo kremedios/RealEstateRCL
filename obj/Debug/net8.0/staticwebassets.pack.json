@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/scopedcss/projectbundle/RealEstateRCL.bundle.scp.css",
+      "PackagePath": "staticwebassets/RealEstateRCL.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/background.png",
+      "PackagePath": "staticwebassets/background.png"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/exampleJsInterop.js",
+      "PackagePath": "staticwebassets/exampleJsInterop.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RealEstateRCL.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.RealEstateRCL.props",
+      "PackagePath": "build\\RealEstateRCL.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.RealEstateRCL.props",
+      "PackagePath": "buildMultiTargeting\\RealEstateRCL.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.RealEstateRCL.props",
+      "PackagePath": "buildTransitive\\RealEstateRCL.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
