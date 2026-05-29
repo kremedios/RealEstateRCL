@@ -20,3 +20,9 @@
 /Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/refint/RealEstateRCL.dll
 /Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/RealEstateRCL.pdb
 /Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/ref/RealEstateRCL.dll
+/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/RealEstateRCL.RazorAssemblyInfo.cache
+/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/RealEstateRCL.RazorAssemblyInfo.cs
+/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/bin/Debug/net8.0/AppContractsSCO.dll
+/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/bin/Debug/net8.0/AppContractsSCO.pdb
+/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/RealEstateRCL.csproj.AssemblyReference.cache
+/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/RealEsta.FE970F94.Up2Date

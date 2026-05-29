@@ -2,13 +2,23 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
+
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
+<PropertyGroup>
+  <RazorCompileOnBuild>true</RazorCompileOnBuild>
+  <RazorCompileOnPublish>true</RazorCompileOnPublish>
+</PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared_common_objects_library_projects\AppContractsSCO\AppContractsSCO.csproj" />    
+  </ItemGroup>
 
 </Project>

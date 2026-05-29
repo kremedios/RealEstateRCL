@@ -1,0 +1,367 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Listing</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            margin-top: 0;
+        }
+
+        /* ---------------------------------
+           PROPERTY SUMMARY
+        --------------------------------- */
+
+        .property-summary {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+
+        .property-summary ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        /* ---------------------------------
+           GALLERY GRID
+        --------------------------------- */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+            transition: transform 0.2s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.02);
+        }
+
+        .gallery-grid a {
+            text-decoration: none;
+        }
+
+        /* ---------------------------------
+           LIGHTBOX / LARGE IMAGE VIEW
+           Pure CSS using :target
+        --------------------------------- */
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.9);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            text-align: center;
+        }
+
+        .lightbox img {
+            width: 100%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .caption {
+            color: white;
+            margin-top: 12px;
+            font-size: 1rem;
+        }
+
+        /* ---------------------------------
+           NAVIGATION ARROWS
+        --------------------------------- */
+
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 3rem;
+            text-decoration: none;
+            padding: 10px;
+            user-select: none;
+        }
+
+        .nav-left {
+            left: -60px;
+        }
+
+        .nav-right {
+            right: -60px;
+        }
+
+        /* ---------------------------------
+           CLOSE BUTTON
+        --------------------------------- */
+
+        .close-btn {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        /* ---------------------------------
+           DETAILS SECTION
+        --------------------------------- */
+
+        .property-details {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 24px;
+        }
+
+        .property-details ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        /* ---------------------------------
+           MOBILE ADJUSTMENTS
+        --------------------------------- */
+
+        @@media (max-width: 768px) {
+
+            .nav-left {
+                left: 10px;
+            }
+
+            .nav-right {
+                right: 10px;
+            }
+
+            .nav-arrow {
+                font-size: 2.2rem;
+            }
+
+            .gallery-grid img {
+                height: 180px;
+            }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+@{
+    var price = "325,000";
+}
+
+    <div class="container">
+
+        <!-- =================================
+             HEADER / SUMMARY
+        ================================== -->
+
+        <section class="property-summary">
+            <h2>Walk to Johns Hopkins</h1>
+
+            <ul>
+                <li>15-minute <span style="font-size:larger;font-weight:600;font-style:italic">walk</span> to Homewood campus</li>
+                <li>In the heart of Hampden neighborhood</li>
+                <li>Enclosed, detached <span style="font-size:larger;font-weight:600;font-style:italic">garage</span> with automatic door</li>
+                <li>Townhouse: 2 Bedrooms / 1 1/2 Bathrooms</li>
+                <li>1,104 Square Feet</li>
+                <li><b>No HOA</b></li>
+                <li>Walk to numerous, diverse restaurants</li>
+                <li>Walkers' paradise</li>
+                <li>xxxx Keswick Rd, Baltimore MD 21211</li>
+                <li><span style="font-weight:600">$@price</span></li>
+            </ul>
+        </section>
+
+        <!-- =================================
+             PHOTO GRID
+        ================================== -->
+
+        <section class="gallery-grid">
+
+            <a href="#img1">
+                <img src="images/photo1.jpg" alt="Front Exterior">
+            </a>
+
+            <a href="#img2">
+                <img src="images/photo2.jpg" alt="Kitchen">
+            </a>
+
+            <a href="#img3">
+                <img src="images/photo3.jpg" alt="Living Room">
+            </a>
+
+            <a href="#img4">
+                <img src="images/photo4.jpg" alt="Bedroom">
+            </a>
+
+        </section>
+
+        <!-- =================================
+             LIGHTBOXES
+        ================================== -->
+
+        <!-- IMAGE 1 -->
+
+        <div id="img1" class="lightbox">
+
+            <div class="lightbox-content">
+
+                <a href="#" class="close-btn">&times;</a>
+
+                <a href="#img4" class="nav-arrow nav-left">&#10094;</a>
+
+                <img src="images/photo1.jpg" alt="Front Exterior">
+
+                <a href="#img2" class="nav-arrow nav-right">&#10095;</a>
+
+                <div class="caption">
+                    Front exterior with waterfront access.
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- IMAGE 2 -->
+
+        <div id="img2" class="lightbox">
+
+            <div class="lightbox-content">
+
+                <a href="#" class="close-btn">&times;</a>
+
+                <a href="#img1" class="nav-arrow nav-left">&#10094;</a>
+
+                <img src="images/photo2.jpg" alt="Kitchen">
+
+                <a href="#img3" class="nav-arrow nav-right">&#10095;</a>
+
+                <div class="caption">
+                    Modern kitchen with quartz countertops.
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- IMAGE 3 -->
+
+        <div id="img3" class="lightbox">
+
+            <div class="lightbox-content">
+
+                <a href="#" class="close-btn">&times;</a>
+
+                <a href="#img2" class="nav-arrow nav-left">&#10094;</a>
+
+                <img src="images/photo3.jpg" alt="Living Room">
+
+                <a href="#img4" class="nav-arrow nav-right">&#10095;</a>
+
+                <div class="caption">
+                    Spacious living room with natural lighting.
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- IMAGE 4 -->
+
+        <div id="img4" class="lightbox">
+
+            <div class="lightbox-content">
+
+                <a href="#" class="close-btn">&times;</a>
+
+                <a href="#img3" class="nav-arrow nav-left">&#10094;</a>
+
+                <img src="images/photo4.jpg" alt="Bedroom">
+
+                <a href="#img1" class="nav-arrow nav-right">&#10095;</a>
+
+                <div class="caption">
+                    Primary bedroom overlooking the water.
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- =================================
+             PROPERTY DETAILS
+        ================================== -->
+
+        <section class="property-details">
+
+            <ul>
+                <li>Enclosed, detached 1-car garage with automatic door</li>
+                <li>New hot water heater</li>
+                <li>New roof in 20??</li>
+                <li><b>No HOA</b></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
+```

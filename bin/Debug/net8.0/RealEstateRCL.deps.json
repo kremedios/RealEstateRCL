@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "RealEstateRCL/1.0.0": {
+        "dependencies": {
+          "AppContractsSCO": "1.0.0"
+        },
         "runtime": {
           "RealEstateRCL.dll": {}
+        }
+      },
+      "AppContractsSCO/1.0.0": {
+        "runtime": {
+          "AppContractsSCO.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "RealEstateRCL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AppContractsSCO/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

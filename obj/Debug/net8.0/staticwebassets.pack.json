@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/background.png"
     },
     {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
       "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/exampleJsInterop.js",
       "PackagePath": "staticwebassets/exampleJsInterop.js"
     },
