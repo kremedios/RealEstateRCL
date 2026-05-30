@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -188,12 +188,55 @@
             }
         }
 
+
+
+
+
+
+.info-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.neighborhood-dialog {
+    width: min(700px, 90%);
+    border: none;
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.neighborhood-dialog::backdrop {
+    background: rgba(0,0,0,0.45);
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.close-button {
+    border: none;
+    background: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+
+
+
     </style>
 
 
 </head>
 
 <body>
+
+@model CountModel
 
 @{
     var price = "325,000";
@@ -209,14 +252,15 @@
             <h2>Walk to Johns Hopkins</h1>
 
             <ul>
-                <li>15-minute <span style="font-size:larger;font-weight:600;font-style:italic">walk</span> to Homewood campus</li>
-                <li>In the heart of Hampden neighborhood</li>
-                <li>Enclosed, detached <span style="font-size:larger;font-weight:600;font-style:italic">garage</span> with automatic door</li>
-                <li>Townhouse: 2 Bedrooms / 1 1/2 Bathrooms</li>
+                <li>Beautiful 15-minute <span style="font-size:larger;font-weight:600;font-style:italic">walk</span> to Johns Hopkins University campus</li>
+                <li>In the heart of <span style="font-weight:600">Hampden</span> neighborhood</li>
+                <li><b><i>Rare</i></b> enclosed, detached <span style="font-size:larger;font-weight:600;font-style:italic">garage</span> with automatic door</li>
+                <li>Townhouse: 2 Bedrooms / 1&frac12; Bathrooms</li>
                 <li>1,104 Square Feet</li>
                 <li><b>No HOA</b></li>
                 <li>Walk to numerous, diverse restaurants</li>
-                <li>Walkers' paradise</li>
+                <li>Walkers' paradise: close to shops, Johns Hopkins University</li>
+                <li>Location + features + TLC => potential cozy <span style="font-style:italic;font-weight:bold">home</span> and/or <span style="font-style:italic;font-weight:bold">rental</span> gem</li>
                 <li>xxxx Keswick Rd, Baltimore MD 21211</li>
                 <li><span style="font-weight:600">$@price</span></li>
             </ul>
@@ -229,19 +273,27 @@
         <section class="gallery-grid">
 
             <a href="#img1">
-                <img src="images/photo1.jpg" alt="Front Exterior">
+                <img src="/_content/RealEstateRCL/images/1_pic.jpg" alt="Front Exterior">
             </a>
 
             <a href="#img2">
-                <img src="images/photo2.jpg" alt="Kitchen">
+                <img src="/_content/RealEstateRCL/images/2_pic.jpg" alt="Kitchen">
             </a>
 
             <a href="#img3">
-                <img src="images/photo3.jpg" alt="Living Room">
+                <img src="/_content/RealEstateRCL/images/3_pic.jpg" alt="Living Room">
             </a>
 
             <a href="#img4">
-                <img src="images/photo4.jpg" alt="Bedroom">
+                <img src="/_content/RealEstateRCL/images/4_pic.jpg" alt="Bedroom">
+            </a>
+
+            <a href="#img1">
+                <img src="/_content/RealEstateRCL/images/5_pic.jpg" alt="Front Exterior">
+            </a>
+
+            <a href="#img2">
+                <img src="/_content/RealEstateRCL/images/6_pic.jpg" alt="Kitchen">
             </a>
 
         </section>
@@ -260,7 +312,7 @@
 
                 <a href="#img4" class="nav-arrow nav-left">&#10094;</a>
 
-                <img src="images/photo1.jpg" alt="Front Exterior">
+                <img src="/_content/RealEstateRCL/images/1_pic.jpg" alt="Front Exterior">
 
                 <a href="#img2" class="nav-arrow nav-right">&#10095;</a>
 
@@ -282,7 +334,7 @@
 
                 <a href="#img1" class="nav-arrow nav-left">&#10094;</a>
 
-                <img src="images/photo2.jpg" alt="Kitchen">
+                <img src="/_content/RealEstateRCL/images/2_pic.jpg" alt="Kitchen">
 
                 <a href="#img3" class="nav-arrow nav-right">&#10095;</a>
 
@@ -304,7 +356,7 @@
 
                 <a href="#img2" class="nav-arrow nav-left">&#10094;</a>
 
-                <img src="images/photo3.jpg" alt="Living Room">
+                <img src="/_content/RealEstateRCL/images/3_pic.jpg" alt="Living Room">
 
                 <a href="#img4" class="nav-arrow nav-right">&#10095;</a>
 
@@ -326,9 +378,9 @@
 
                 <a href="#img3" class="nav-arrow nav-left">&#10094;</a>
 
-                <img src="images/photo4.jpg" alt="Bedroom">
+                <img src="/_content/RealEstateRCL/images/4_pic.jpg" alt="Bedroom">
 
-                <a href="#img1" class="nav-arrow nav-right">&#10095;</a>
+                <a href="#img5" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
                     Primary bedroom overlooking the water.
@@ -338,30 +390,237 @@
 
         </div>
 
+     <!-- IMAGE 5 -->
+
+        <div id="img5" class="lightbox">
+
+            <div class="lightbox-content">
+
+                <a href="#" class="close-btn">&times;</a>
+
+                <a href="#img4" class="nav-arrow nav-left">&#10094;</a>
+
+                <img src="/_content/RealEstateRCL/images/5_pic.jpg" alt="Bedroom">
+
+                <a href="#img6" class="nav-arrow nav-right">&#10095;</a>
+
+                <div class="caption">
+                    Primary bedroom overlooking the water.
+                </div>
+
+            </div>
+
+        </div>
+
+
+            <!-- IMAGE 6 -->
+
+        <div id="img6" class="lightbox">
+
+            <div class="lightbox-content">
+
+                <a href="#" class="close-btn">&times;</a>
+
+                <a href="#img5" class="nav-arrow nav-left">&#10094;</a>
+
+                <img src="/_content/RealEstateRCL/images/6_pic.jpg" alt="Bedroom">
+
+                <a href="#img1" class="nav-arrow nav-right">&#10095;</a>
+
+                <div class="caption">
+                    Primary bedroom overlooking the water.
+                </div>
+
+            </div>
+
+        </div> 
         <!-- =================================
              PROPERTY DETAILS
         ================================== -->
 
         <section class="property-details">
 
-            <ul>
-                <li>Enclosed, detached 1-car garage with automatic door</li>
-                <li>New hot water heater</li>
+
+<!-- ========================================== -->
+<button class="info-button"
+        onclick="document.getElementById('neighborhoodDialog').showModal()">
+    
+    <img src="/_content/RealEstateRCL/images/miracle.jpg"  width="100%"/>
+    
+    <br/>
+    Miracle on 34th Street - <i>click me</i>
+</button>
+
+<dialog id="neighborhoodDialog" class="neighborhood-dialog">
+
+    <button onclick="document.getElementById('neighborhoodDialog').close()">
+    CLOSE
+    </button>
+
+<br/>
+
+<div style="text-align:center;">
+<img src="/_content/RealEstateRCL/images/miracle_3.jpg"  width="100%"/>
+</div>
+
+<p>
+We are located right next to the famous <span style="font-weight:bold;">Miracle on 34th Street</span> in the Hampden neighborhood of Baltimore.
+</p>
+
+<p>
+It is one of Baltimore’s best-known holiday traditions:
+
+an entire residential block covered in elaborate Christmas lights and decorations
+located on the 700 block of West 34th Street
+between Keswick Road and Chestnut Avenue.
+</p>
+
+<p>
+The street is lined with classic Baltimore rowhouses, and during the holidays nearly every house becomes part of a huge community art display:
+thousands of lights,
+animated decorations,
+themed displays,
+Baltimore cultural references,
+whimsical homemade art.
+</p>
+
+<p>
+Some famous features include:
+the “hubcap Christmas tree”,
+bicycle-wheel snowmen,
+giant crabs,
+Natty Boh imagery,
+trains and moving displays.
+</p>
+
+<p>
+It feels
+quirky,
+festive,
+very Baltimore.
+Not polished like a commercial light show — more handmade, neighborhood-driven, and creative.
+The experience is usually
+crowded,
+energetic,
+family-oriented,
+nostalgic.
+</p>
+
+<p>
+Walk the block slowly,
+take photos,
+drink hot chocolate,
+visit nearby Hampden restaurants and shops.
+The neighborhood itself has a distinctive personality:
+artsy,
+eclectic,
+old Baltimore rowhouse character.
+</p>
+
+<p>
+Lights begin just after Thanksgiving,
+continue through New Year’s Day,
+turn on around dusk nightly.
+Better to walk than drive.
+</p>
+
+<p>
+Most locals recommend:
+parking nearby
+then walking.
+Many people combine the lights with:
+dinner,
+dessert,
+shopping on “The Avenue” (36th Street)--
+The whole area becomes a holiday outing.
+</p>
+
+
+<p>
+Imagine
+narrow rowhouses
+lights strung roof-to-roof across the street,
+colorful decorations everywhere,
+glowing displays packed tightly together.
+</p>
+
+<p>
+It has become
+a Baltimore tradition for decades.
+It is a nationally known,
+cultural icon in the city.
+Many Baltimore residents consider
+“The Miracle on 34th Street”
+the unofficial start of Christmas season.
+
+
+<div style="text-align:center;">
+<img src="/_content/RealEstateRCL/images/miracle_4.jpg"  width="100%"/>
+</div>
+
+</partial>
+</br>
+    <button onclick="document.getElementById('neighborhoodDialog').close()">
+    CLOSE
+    </button>
+
+</dialog>
+
+<!-- ========================================== -->
+
+
+
+            <ul style="margin-top:0.7em">
+                <li><b><i>Rare</i></b> enclosed, detached 1-car <b>garage</b> with automatic door--no searching for street parking (<i>think: bad weather with groceries</i>)</li>
+                <li>Garage helps keep your car newer--protecting it from the sun &amp; the weather</li>
                 <li>New roof in 20??</li>
+                <li>New hot water heater</li>
                 <li><b>No HOA</b></li>
+                <li>Washer &amp; Dryer</li>
+                <li>Microwave</li>
+                <li>Central electric heat &amp; A/C</li>
+                <li>Floors: Hardwood, slate, tile, laminate</li>
+                <li>Fenced backyard with alley access</li>
+                <li>Neighbor only on one side</li>
                 <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>Ownership: Fee Simple</li>
             </ul>
 
         </section>
 
+
+        <section class="property-details">
+            Contact
+            <br/> 
+            <img src="/_content/RealEstateRCL/images/contact.png" width="40%" />
+        </section>
+
+
+
+
+        <div style="font-style: italic;font-weight:lighter">
+            All information is deemed accurate but cannot be guaranteed. It is Buyer's sole responsibity to verify all information.
+        </div>
+
+    </div><!-- container -->
+
+
+<details>
+    <summary style="
+        color:#999;
+        font-size:xx-small;
+        cursor:pointer;
+        opacity:0.3;
+        margin-left:2em">
+        Sys Version
+    </summary>
+
+
+    <div style="color:lightblue;margin-left:2em;font-size:smaller">
+        System Module Build Assembly 260530:@Model.PageHitCount:271828
     </div>
+</details>
 
 </body>
 </html>
-```
+

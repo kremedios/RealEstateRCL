@@ -17,6 +17,54 @@
       "PackagePath": "staticwebassets/exampleJsInterop.js"
     },
     {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/1_pic.jpg",
+      "PackagePath": "staticwebassets/images/1_pic.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/2_pic.jpg",
+      "PackagePath": "staticwebassets/images/2_pic.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/3_pic.jpg",
+      "PackagePath": "staticwebassets/images/3_pic.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/4_pic.jpg",
+      "PackagePath": "staticwebassets/images/4_pic.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/5_pic.jpg",
+      "PackagePath": "staticwebassets/images/5_pic.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/6_pic.jpg",
+      "PackagePath": "staticwebassets/images/6_pic.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/7_pic.jpg",
+      "PackagePath": "staticwebassets/images/7_pic.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/contact.png",
+      "PackagePath": "staticwebassets/images/contact.png"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/miracle.jpg",
+      "PackagePath": "staticwebassets/images/miracle.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/miracle_2.jpg",
+      "PackagePath": "staticwebassets/images/miracle_2.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/miracle_3.jpg",
+      "PackagePath": "staticwebassets/images/miracle_3.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/miracle_4.jpg",
+      "PackagePath": "staticwebassets/images/miracle_4.jpg"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RealEstateRCL.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
