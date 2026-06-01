@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RealEstateRCL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c47a9902b73e772625c90b73dcb7c841cc308beb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b869cb322d838fd43fee92d30c0cbd2f0d29ab7")]
 [assembly: System.Reflection.AssemblyProductAttribute("RealEstateRCL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RealEstateRCL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
