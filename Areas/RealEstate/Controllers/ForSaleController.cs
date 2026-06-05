@@ -59,31 +59,6 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
 
 
 
-
-
-
-
-
-/*
-        [HttpGet("KeswickAdmin")]
-        public IActionResult KeswickAdmin()
-        {
-            return View();
-    
-        }
-*/
-
-/*       
-[HttpGet("KeswickAdmin")]
-public IActionResult KeswickAdmin()
-{
-    var model = _settingsService.Load(
-        "Keswick",
-        "KeswickForSaleSettings.json");
-
-    return View(model);
-}
-*/
 [Authorize(Roles = "Admin:keswick")]
 [HttpGet("KeswickAdmin")]
 public IActionResult KeswickAdmin()
@@ -97,26 +72,12 @@ public IActionResult KeswickAdmin()
 
 
 
-/*
-[HttpPost("KeswickAdmin")]
-[ValidateAntiForgeryToken]
-public IActionResult KeswickAdmin(ForSaleSettings model)
-{
-    _settingsService.Save(
-        "Keswick",
-        "KeswickForSaleSettings.json",
-        model);
 
-    //return View(model);
-     return RedirectToAction(nameof(Keswick));
-}
-*/
 [Authorize(Roles = "Admin:keswick")]
 [HttpPost("KeswickAdmin")]
 [ValidateAntiForgeryToken]
 public IActionResult KeswickAdmin(ForSaleSettings model)
 {
-    //_settingsService.Save(model);
     _settingsService.Save(
         "Keswick",
         "KeswickForSaleSettings.json",
