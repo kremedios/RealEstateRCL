@@ -59,32 +59,32 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
 
 
 
-[Authorize(Roles = "Admin:keswick")]
-[HttpGet("KeswickAdmin")]
-public IActionResult KeswickAdmin()
-{
-    var model = _settingsService.Load(
-        "Keswick",
-        "KeswickForSaleSettings.json");
+        [Authorize(Roles = "Admin:keswick")]
+        [HttpGet("KeswickAdmin")]
+        public IActionResult KeswickAdmin()
+        {
+            var model = _settingsService.Load(
+            "Keswick",
+            "KeswickForSaleSettings.json");
 
-    return View(model);
-}
-
-
+            return View(model);
+        }
 
 
-[Authorize(Roles = "Admin:keswick")]
-[HttpPost("KeswickAdmin")]
-[ValidateAntiForgeryToken]
-public IActionResult KeswickAdmin(ForSaleSettings model)
-{
-    _settingsService.Save(
-        "Keswick",
-        "KeswickForSaleSettings.json",
-        model);
 
-    return RedirectToAction(nameof(Keswick));
-}
+
+        [Authorize(Roles = "Admin:keswick")]
+        [HttpPost("KeswickAdmin")]
+        [ValidateAntiForgeryToken]
+        public IActionResult KeswickAdmin(ForSaleSettings model)
+        {
+            _settingsService.Save(
+                "Keswick",
+                "KeswickForSaleSettings.json",
+                model);
+
+            return RedirectToAction(nameof(Keswick));
+        }
 
 
 
