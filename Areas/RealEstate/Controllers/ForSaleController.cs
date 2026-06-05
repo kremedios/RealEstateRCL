@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using AppContractsSCO.Services.Logging;
 using AppContractsSCO.Models.Logging;
 using AppContractsSCO.Services.RealEstate;
-//using AppContractsSCO.Models.RealEstate;
+using AppContractsSCO.Models.RealEstate.ForSale;
 
 using RealEstateRCL.Areas.RealEstate.Controllers;
 
@@ -37,21 +37,13 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
         [HttpGet("Keswick")]
         public async Task<IActionResult> Keswick()
         {
-            //await _pageHitService.LogPageHitAsync("realEstate", "Keswick");
+            //Load the model with existing values read from JSON file
+            //var model = _settingsService.Load();
+            string webpageName = "Keswick";
+            string settingsFilename = "KeswickForSaleSettings.json";
+            //The "type" of model is a "ForSaleSettings"
+            var model = _settingsService.Load(webpageName, settingsFilename);
 
-            /*
-            var price = _settingsService.Price;
-            Console.WriteLine($"price: {price}");
-
-            var model = new CountModel
-            {
-                PageHitCount = _pageHitService.GetPageHitCount("realEstate", "Keswick")
-            };
-            return View(model);
-            */
-
-            //Load the model with existing values
-            var model = _settingsService.Load();
 
             //Use service to get current PageHitCount 
             await _pageHitService.LogPageHitAsync("realEstate", "Keswick");
@@ -59,18 +51,46 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
             model.CountModel.PageHitCount = _pageHitService.GetPageHitCount("realEstate", "Keswick");
                 
             
-            /*.
-            var model = new test
-            {
-                PageHitCount = _pageHitService.GetPageHitCount("realEstate", "Keswick"),
-                //Settings = _settingsService.Load()
-                //x = "dog"
-                KeswickForSaleSettings = _settingsService.Load()
-            };
-            */
-            
             //You can now use these values in the following View
             return View(model);
         }
+
+/*
+        [HttpGet("KeswickAdmin")]
+        public IActionResult KeswickAdmin()
+        {
+            return View();
+    
+        }
+*/
+       
+[HttpGet("KeswickAdmin")]
+public IActionResult KeswickAdmin()
+{
+    var model = _settingsService.Load(
+        "Keswick",
+        "KeswickForSaleSettings.json");
+
+    return View(model);
+}
+
+
+
+
+[HttpPost("KeswickAdmin")]
+[ValidateAntiForgeryToken]
+public IActionResult KeswickAdmin(ForSaleSettings model)
+{
+    _settingsService.Save(
+        "Keswick",
+        "KeswickForSaleSettings.json",
+        model);
+
+    return View(model);
+}
+
+
+
+
     }
 }

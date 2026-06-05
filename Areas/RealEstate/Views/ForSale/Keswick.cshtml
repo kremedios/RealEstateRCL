@@ -242,10 +242,9 @@
 @model ForSaleSettings
 
 @{
-    var price = "325,000";
+    //var price = "325,000";
     var price_2 = Model.Price;
     var availability = Model.Availability;
-    //var count = Model.CountModel.PageHitCount;
     var count = Model.CountModel.PageHitCount;
 }
 
@@ -269,10 +268,8 @@
                 <li>Walkers' paradise: close to shops, Johns Hopkins University</li>
                 <li>Location + features + TLC => potential cool &amp; cozy <span style="font-style:italic;font-weight:bold">home</span> and/or <span style="font-style:italic;font-weight:bold">rental</span> gem</li>
                 <li>xxxx Keswick Rd, Baltimore MD 21211</li>
-                <li><span style="font-weight:600">$@price</span></li>
                 <li><span style="font-weight:600">$@price_2</span></li>
                 <li>@availability</li>
-                <li>@count</li>
             </ul>
         </section>
 
@@ -592,7 +589,6 @@ the unofficial start of Christmas season.
                 <li>Floors: Hardwood, slate, tile, laminate</li>
                 <li>Fenced backyard with alley access</li>
                 <li>Neighbor only on one side</li>
-                <li>...</li>
                 <li>Ownership: Fee Simple</li>
                 <li>Polish this gem with some TLC</li>
             </ul>
@@ -628,9 +624,24 @@ the unofficial start of Christmas season.
 
 
     <div style="color:lightblue;margin-left:2em;font-size:smaller">
-        Module Build Version 260603.0744:@*Model.PageHitCount:271828*@
+        @*Module Build Version 260603.0744:@*Model.PageHitCount:271828*@
+        Module Build Version 260604.1231:@count:271828       <a asp-controller="ForSale"
+            asp-action="KeswickAdmin"
+            style="
+                color:#999;
+                font-size:small;
+                opacity:0.3;
+                text-decoration:none;">
+            Keswick Road, Baltimore MD
+            </a>
     </div>
+
 </details>
+
+
+
+
+
 
 </body>
 </html>
