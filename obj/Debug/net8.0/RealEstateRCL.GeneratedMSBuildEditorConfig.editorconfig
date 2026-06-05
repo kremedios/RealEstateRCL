@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50MS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-k4b6qbwawf
 
+[/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/Areas/RealEstate/Views/AdminAuth/x_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUmVhbEVzdGF0ZS9WaWV3cy9BZG1pbkF1dGgveF9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/Areas/RealEstate/Views/ForRent/Keswick_ForRent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUmVhbEVzdGF0ZS9WaWV3cy9Gb3JSZW50L0tlc3dpY2tfRm9yUmVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
