@@ -60,6 +60,7 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
 
 
         [Authorize(Roles = "Admin:keswick")]
+        [ResponseCache(Location = ResponseCacheLocation.None, NoStore = true)]
         [HttpGet("KeswickAdmin")]
         public IActionResult KeswickAdmin()
         {
