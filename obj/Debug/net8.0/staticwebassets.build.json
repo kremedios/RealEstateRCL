@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YFG6SR+MLsBatR+omoOsGbCYudR5MRyeH6jpUq5H2/M=",
+  "Hash": "k501QXeRXvqSjy7K0U1hfbQoqrbOv6TD30Wx0GVzo48=",
   "Source": "RealEstateRCL",
   "BasePath": "_content/RealEstateRCL",
   "Mode": "Default",
@@ -262,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/contact.png"
+    },
+    {
+      "Identity": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/map.png",
+      "SourceId": "RealEstateRCL",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/",
+      "BasePath": "_content/RealEstateRCL",
+      "RelativePath": "images/map.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/map.png"
     },
     {
       "Identity": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/miracle_2.jpg",

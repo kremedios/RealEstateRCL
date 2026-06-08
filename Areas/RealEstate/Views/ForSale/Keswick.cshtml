@@ -88,7 +88,7 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
-            z-index: 1000;
+            z-index: 9999;
         }
 
         .lightbox:target {
@@ -123,19 +123,21 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            color: white;
-            font-size: 3rem;
+            color: red;
+            /*font-size: 3rem;*/
+            font-size: 50px;
             text-decoration: none;
             padding: 10px;
             user-select: none;
+            z-index: 10000;
         }
 
         .nav-left {
-            left: -60px;
+            left: 20px;
         }
 
         .nav-right {
-            right: -60px;
+            right: 20px;
         }
 
         /* ---------------------------------
@@ -279,6 +281,10 @@
 
         <section class="gallery-grid">
 
+            <a href="#img0">
+                <img src="/_content/RealEstateRCL/images/map.png" alt="Location">
+            </a>
+
             <a href="#img1">
                 <img src="/_content/RealEstateRCL/images/R62_0501_2400.JPG" alt="Front Exterior">
             </a>
@@ -317,6 +323,32 @@
              LIGHTBOXES
         ================================== -->
 
+       <!-- IMAGE 0 -->
+
+        <div id="img0" class="lightbox">
+
+            <div class="lightbox-content">
+
+                <a href="#" class="close-btn">&times;</a>
+
+                <a href="#img8" class="nav-arrow nav-left">&#10094;</a>
+
+                <img src="/_content/RealEstateRCL/images/map.png" alt="Front Exterior">
+
+                <a href="#img1" class="nav-arrow nav-right">&#10095;</a>
+
+                <div class="caption">
+                    Location!!! Great variety of restaurants on 36th St, <i>Miracle on 34th St</i>, walk to John Hopkins University
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
         <!-- IMAGE 1 -->
 
         <div id="img1" class="lightbox">
@@ -325,14 +357,14 @@
 
                 <a href="#" class="close-btn">&times;</a>
 
-                <a href="#img8" class="nav-arrow nav-left">&#10094;</a>
+                <a href="#img0" class="nav-arrow nav-left">&#10094;</a>
 
                 <img src="/_content/RealEstateRCL/images/R62_0501_2400.JPG" alt="Front Exterior">
 
                 <a href="#img2" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    pic 1
+                    Walking in our neighborhood
                 </div>
 
             </div>
@@ -354,7 +386,7 @@
                 <a href="#img3" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    pic 2
+                    Walking in our neighborhood
                 </div>
 
             </div>
@@ -376,7 +408,7 @@
                 <a href="#img4" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    pic 3
+                    Walking in our neighborhood
                 </div>
 
             </div>
@@ -398,7 +430,7 @@
                 <a href="#img5" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    pic 4
+                    Hampden Highlights Festival 2026 in the immediate neighborhood
                 </div>
 
             </div>
@@ -420,7 +452,7 @@
                 <a href="#img6" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    pic 5
+                    Hampden Highlights Festival 2026 in the immediate neighborhood
                 </div>
 
             </div>
@@ -443,7 +475,7 @@
                 <a href="#img7" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    pic 6
+                    Hampden Highlights Festival 2026 in the immediate neighborhood
                 </div>
 
             </div>
@@ -465,7 +497,7 @@
                 <a href="#img8" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    pic 7
+                    Hampden Highlights Festival 2026 in the immediate neighborhood
                 </div>
 
             </div>
@@ -484,10 +516,10 @@
 
                 <img src="/_content/RealEstateRCL/images/R62_0517_2400.JPG" alt="Bedroom">
 
-                <a href="#img1" class="nav-arrow nav-right">&#10095;</a>
+                <a href="#img0" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    pic 8
+                    Walking in our neighborhood
                 </div>
 
             </div>
@@ -640,9 +672,11 @@ the unofficial start of Christmas season.
                 <li>Central electric heat &amp; A/C</li>
                 <li>Floors: Hardwood, slate, tile, laminate</li>
                 <li>Fenced backyard with alley access</li>
+                <li>Backyard with high fence is very <span style="font-style:italic;font-weight:600;">private</span> &amp; has great potential for outdoor living</li>
                 <li>Fenced frontyard with inviting, elevated covered porch</li>
                 <li>Neighbor only on one side</li>
                 <li>Ownership: Fee Simple (NO Ground Rent)</li>
+                <li>Relocating because of work</li>
                 <li>Sold As-Is</li>
                 <li>Polish this gem with some TLC</li>
             </ul>
@@ -679,7 +713,7 @@ the unofficial start of Christmas season.
 
     <div style="color:lightblue;margin-left:2em;font-size:smaller">
 
-        Module Build Version 260607.0855:@count:271828       
+        Module Build Version 260608.1704:@count:271828       
 
         <a  asp-area=""
             asp-controller="AdminAuth"

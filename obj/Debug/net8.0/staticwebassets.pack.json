@@ -81,6 +81,10 @@
       "PackagePath": "staticwebassets/images/contact.png"
     },
     {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/map.png",
+      "PackagePath": "staticwebassets/images/map.png"
+    },
+    {
       "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/miracle.jpg",
       "PackagePath": "staticwebassets/images/miracle.jpg"
     },
