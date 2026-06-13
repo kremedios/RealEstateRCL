@@ -248,6 +248,7 @@
     var price_2 = Model.Price;
     var availability = Model.Availability;
     var count = Model.CountModel.PageHitCount;
+    //ar contact = Model.Contact;
 }
 
     <div class="container">
@@ -266,8 +267,8 @@
                 <li>2-Story Townhouse: 2 Bedrooms / 1&frac12; Bathrooms</li>
                 <li>1,104 Square Feet</li>
                 <li><b>No HOA</b></li>
-                <li>Walk to numerous, diverse restaurants</li>
-                <li>Walkers' paradise: close to shops, Johns Hopkins University</li>
+                <li>Very short <i>walk</i> to numerous restaurants representing cuisines from around the world</li>
+                <li>Walkers' paradise: close to shops, eateries, Johns Hopkins University</li>
                 <li>Location + features + TLC => potential cool &amp; cozy <span style="font-style:italic;font-weight:bold">home</span> and/or <span style="font-style:italic;font-weight:bold">rental</span> gem</li>
                 <li>xxxx Keswick Rd, Baltimore MD 21211</li>
                 <li><span style="font-weight:600">$@price_2</span></li>
@@ -664,8 +665,9 @@ the unofficial start of Christmas season.
             <ul style="margin-top:0.7em">
                 <li><b><i>Rare</i></b> enclosed, detached 1-car <b>garage</b> with automatic door--no searching for street parking (<i>think: bad weather with groceries</i>)</li>
                 <li>Garage helps keep your car newer--protecting it from the sun &amp; the weather</li>
+                <li>Garage has flat roof--(crazy thought...future room above garage???)</li>
                 <li>New roof in 20??</li>
-                <li>New hot water heater</li>
+                <li>New hot water heater May? 2026</li>
                 <li><b>No HOA</b></li>
                 <li>Washer &amp; Dryer</li>
                 <li>Microwave</li>
@@ -685,9 +687,19 @@ the unofficial start of Christmas season.
 
 
         <section class="property-details">
-            Contact
+            <span style="font-size:smaller">CONTACT</span>
+                <ul>
+                 @foreach (var block in Model.ContactBlocks)
+                 {
+                    <li>
+                    @Html.Raw(block)
+                    </li>
+                 }
+                </ul>
+            <!--
             <br/> 
             <img src="/_content/RealEstateRCL/images/contact.png" width="40%" />
+            -->
         </section>
 
 
@@ -713,7 +725,7 @@ the unofficial start of Christmas season.
 
     <div style="color:lightblue;margin-left:2em;font-size:smaller">
 
-        Module Build Version 260608.1704:@count:271828       
+        Module Build Version 260613.0753:@count:271828       
 
         <a  asp-area=""
             asp-controller="AdminAuth"

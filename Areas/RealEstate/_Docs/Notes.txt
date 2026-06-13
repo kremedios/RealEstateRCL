@@ -1,0 +1,3 @@
+NOTES
+- You can simply add a new line to the properties file (stored in TemplateHost)
+to expand ContactBlocks that is used in Keswich.cshtml
