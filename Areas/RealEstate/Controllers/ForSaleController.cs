@@ -64,6 +64,7 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
         [HttpGet("KeswickAdmin")]
         public IActionResult KeswickAdmin()
         {
+            
             var model = _settingsService.Load(
             "Keswick",
             "KeswickForSaleSettings.json");
