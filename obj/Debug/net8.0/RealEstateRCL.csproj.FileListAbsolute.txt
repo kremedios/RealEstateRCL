@@ -11,6 +11,7 @@
 /Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/RealEstateRCL.csproj.CoreCompileInputs.cache
 /Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/RealEstateRCL.RazorAssemblyInfo.cache
 /Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/RealEstateRCL.RazorAssemblyInfo.cs
+/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/RealEstateRCL.sourcelink.json
 /Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/staticwebassets.build.json
 /Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/staticwebassets.development.json
 /Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/obj/Debug/net8.0/staticwebassets/msbuild.RealEstateRCL.Microsoft.AspNetCore.StaticWebAssets.props
