@@ -12,18 +12,6 @@
           "bin/placeholder/AppContractsSCO.dll": {}
         }
       }
-    },
-    "net8.0/win-x64": {
-      "AppContractsSCO/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/AppContractsSCO.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AppContractsSCO.dll": {}
-        }
-      }
     }
   },
   "libraries": {
@@ -103,11 +91,6 @@
           }
         },
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.420/PortableRuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win-x64": {
-        "#import": []
       }
     }
   }

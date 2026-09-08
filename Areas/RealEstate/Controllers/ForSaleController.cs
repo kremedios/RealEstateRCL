@@ -38,6 +38,9 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
         [HttpGet("Keswick")]
         public async Task<IActionResult> Keswick()
         {
+            _pageHitService.BlockAccess();//test this--block
+
+
             //Load the model with existing values read from JSON file
             //var model = _settingsService.Load();
             string webpageName = "Keswick";
