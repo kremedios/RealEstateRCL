@@ -1,13 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
-using System.Threading.Tasks;
-
-using AppContractsSCO.Services.Logging;
-using AppContractsSCO.Models.Logging;
-using AppContractsSCO.Services.RealEstate;
+using AppContractsSCO.Models.Common;
 using AppContractsSCO.Models.RealEstate.ForSale;
-
-using RealEstateRCL.Areas.RealEstate.Controllers;
+using AppContractsSCO.Services.Logging;
+using AppContractsSCO.Services.RealEstate;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 
 namespace RealEstateRCL.Areas.RealEstate.Controllers
@@ -18,15 +14,17 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
     {
         //Interface defined in AppContractsSCO
         private readonly IPageHitService _pageHitService;
-
+        //private readonly IPageHitEvaluationManager _pageHitEvaluationManager;
         private readonly IForSaleSettingsService _settingsService;
     
         public ForSaleController(IPageHitService pageHitService,
                                  IForSaleSettingsService forSaleSettingsService)
+                                 //IPageHitEvaluationManager pageHitEvaluationManager)
                             
         {
             _pageHitService = pageHitService;//Implemented in host app
             _settingsService = forSaleSettingsService;//Implemented in host app
+            //_pageHitEvaluationManager = pageHitEvaluationManager;
         }
 
         [HttpGet("")]
@@ -38,7 +36,31 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
         [HttpGet("Keswick")]
         public async Task<IActionResult> Keswick()
         {
-            _pageHitService.BlockAccess();//test this--block
+            //Get PageHit info
+            //Write in PageHitService.cs the code for method GetPageHit(.)
+
+
+            /**
+            Replaced the following code with middleware in Program.cs
+            //Use service to evaluate webpage hit
+            var whatToDo = await _pageHitEvaluationManager.EvaluatePageHit("realEstate", "Keswick");
+
+            switch (whatToDo)
+            {
+                case PageHitEvaluation.AllowAndDoNotRegister:
+
+                break;
+
+                case PageHitEvaluation.Block:
+
+                break;
+
+                case PageHitEvaluation.AllowAndRegister:
+                default:
+
+                break;
+            }
+            */
 
 
             //Load the model with existing values read from JSON file
@@ -49,8 +71,12 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
             var model = _settingsService.Load(webpageName, settingsFilename);
 
 
-            //Use service to get current PageHitCount 
+            //Use service to log a page hit. This service will determine
+            //whether or not the page request is from a human or a bot and
+            //act accordingly.s
             await _pageHitService.LogPageHitAsync("realEstate", "Keswick");
+
+
             //Update values in the model for this web page
             model.CountModel.PageHitCount = _pageHitService.GetPageHitCount("realEstate", "Keswick");
                 

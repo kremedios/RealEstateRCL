@@ -278,8 +278,9 @@
                 <li>1,104 Square Feet (not including garage)</li>
                 <li><b>No HOA</b></li>
                 <li>Very short <i>walk</i> to numerous restaurants representing cuisines from around the world</li>
-                <li>Walkers' paradise: close to shops, eateries, Johns Hopkins University</li>
-                <li>Location + features + TLC => potential cool &amp; cozy <span style="font-style:italic;font-weight:bold">home</span> and/or <span style="font-style:italic;font-weight:bold">rental</span> gem</li>
+                <li>Walkers' paradise: close to shops, eateries, Johns Hopkins University</li> 
+                <li>We're right next to the famous <b>Miracle on 34th Street</b> in the Hampden neighborhood, one of Baltimore’s best-known holiday traditions</li>
+                <li>Location + features + TLC => Cool &amp; cozy <span style="font-style:italic;font-weight:bold">home</span> and/or <span style="font-style:italic;font-weight:bold">rental</span> gem</li>
                 <li>xxxx Keswick Rd, Baltimore MD 21211</li>
                 <li><span style="font-weight:600">$@price_2</span></li>
                 <li>@availability</li>
@@ -628,7 +629,7 @@
    
 
     <!-- ============== -->    
-                         <!-- IMAGE 11 -->
+                         
 
         <div id="img11" class="lightbox">
 
@@ -643,14 +644,14 @@
                 <a href="#img12" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    keswick
+                     1 keswick
                 </div>
 
             </div>
 
         </div>
    
-                         <!-- IMAGE 12 -->
+                         
 
         <div id="img12" class="lightbox">
 
@@ -665,14 +666,14 @@
                 <a href="#img13" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    keswick
+                    2 keswick
                 </div>
 
             </div>
 
         </div>
    
-                         <!-- IMAGE 13 -->
+                        
 
         <div id="img13" class="lightbox">
 
@@ -687,14 +688,14 @@
                 <a href="#img14" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    keswick
+                    3 keswick
                 </div>
 
             </div>
 
         </div>
    
-                         <!-- IMAGE 14 -->
+                         
 
         <div id="img14" class="lightbox">
 
@@ -709,14 +710,14 @@
                 <a href="#img15" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    keswick
+                    4 keswick
                 </div>
 
             </div>
 
         </div>
    
-                         <!-- IMAGE 15 -->
+                         
 
         <div id="img15" class="lightbox">
 
@@ -731,14 +732,14 @@
                 <a href="#img16" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    keswick
+                     5 keswick
                 </div>
 
             </div>
 
         </div>
    
-                         <!-- IMAGE 16 -->
+                       
 
         <div id="img16" class="lightbox">
 
@@ -753,15 +754,14 @@
                 <a href="#img17" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    keswick
+                    6 keswick
                 </div>
 
             </div>
 
         </div>
    
-                         <!-- IMAGE 17 -->
-
+                         
         <div id="img17" class="lightbox">
 
             <div class="lightbox-content">
@@ -775,14 +775,14 @@
                 <a href="#img18" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    keswick
+                    7 keswick
                 </div>
 
             </div>
 
         </div>
    
-                         <!-- IMAGE 18 -->
+                         
 
         <div id="img18" class="lightbox">
 
@@ -797,7 +797,7 @@
                 <a href="#img19" class="nav-arrow nav-right">&#10095;</a>
 
                 <div class="caption">
-                    keswick
+                    8 keswick
                 </div>
 
             </div>
@@ -815,6 +815,7 @@
 
 
 <!-- ========================================== -->
+<!--
 <button class="info-button"
         onclick="document.getElementById('neighborhoodDialog').showModal()">
     
@@ -938,7 +939,7 @@ the unofficial start of Christmas season.
     </button>
 
 </dialog>
-
+-->
 <!-- ========================================== -->
 
 
@@ -946,12 +947,12 @@ the unofficial start of Christmas season.
             <ul style="margin-top:0.7em">
                 <li><b><i>Rare</i></b> enclosed, detached 1-car <b>garage</b> with automatic door--no searching for street parking (<i>think: bad weather with groceries</i>)</li>
                 <li>Garage helps keep your car newer--protecting it from the sun &amp; the weather</li>
-                <li>Garage has cinder block walls with flat roof--(crazy thought...future room above garage???)</li>
-                <li>Garage has <b>electrical service</b>...think of all the possibilities</li>
+                <li>Garage has cinder block walls with flat roof</li>
+                <li>Garage has <b>electrical service</b></li>
                 <Li>Garage electrical service: 120VAC and 240VAC 50 amps (Buyer to verify)</Li>
                 <Li>Garage also has electric baseboard heater and wall A/C --current owner never used (Buyer to verify operational functionality)</Li>
                 <li>Detached garage could possibly be rented out</li>
-                <li>New roof in 20??</li>
+                <li>New roof in 2023</li>
                 <li>New hot water heater May 2026</li>
                 <li><b>No HOA</b></li>
                 <li>End unit allows more light in</li>
@@ -975,12 +976,35 @@ the unofficial start of Christmas season.
         <section class="property-details">
             <span style="font-size:smaller;font-weight:bold">CONTACT</span>
                 <ul>
-                 @foreach (var block in Model.ContactBlocks)
-                 {
-                    <li>
-                    @Html.Raw(block)
-                    </li>
-                 }
+         
+                    @foreach (var block in Model.ContactBlocks)
+                    {
+                        <li>
+                            @if (block.StartsWith("https://", StringComparison.OrdinalIgnoreCase) ||
+                                block.StartsWith("http://", StringComparison.OrdinalIgnoreCase))
+                            {
+                                <a href="@block" target="_blank" rel="noopener noreferrer">@block</a>
+                            }
+                            else if (block.StartsWith("Direct:", StringComparison.OrdinalIgnoreCase) ||
+                                    block.StartsWith("Office:", StringComparison.OrdinalIgnoreCase))
+                            {
+                                var parts = block.Split(':', 2);
+                                var phone = parts[1].Trim();
+
+                                <span>@parts[0]: </span>
+                                <a href="tel:@phone.Replace("-", "").Replace(" ", "")">@phone</a>
+                            }
+                            else if (block.Contains('@'))
+                            {
+                                <a href="mailto:@block">@block</a>
+                            }
+                            else
+                            {
+                                @Html.Raw(block)
+                            }
+                        </li>
+                    }
+
                 </ul>
             <!--
             <br/> 
@@ -992,7 +1016,7 @@ the unofficial start of Christmas season.
 
 
         <div style="font-style: italic;font-weight:lighter">
-            All information is deemed accurate but cannot be guaranteed. It is Buyer's sole responsibity to verify all information.
+            All information on this web page is provided by the Seller and is independent from selling broker; it is deemed accurate but cannot be guaranteed. It is Buyer's sole responsibity to verify all information.
         </div>
 
     </div><!-- container -->

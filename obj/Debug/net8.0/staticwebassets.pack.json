@@ -77,8 +77,36 @@
       "PackagePath": "staticwebassets/images/R62_0517_2400.JPG"
     },
     {
-      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/contact.png",
-      "PackagePath": "staticwebassets/images/contact.png"
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/Xp_1.jpg",
+      "PackagePath": "staticwebassets/images/Xp_1.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/Xp_2.jpg",
+      "PackagePath": "staticwebassets/images/Xp_2.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/Xp_3.jpg",
+      "PackagePath": "staticwebassets/images/Xp_3.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/Xp_4.jpg",
+      "PackagePath": "staticwebassets/images/Xp_4.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/Xp_5.jpg",
+      "PackagePath": "staticwebassets/images/Xp_5.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/Xp_6.jpg",
+      "PackagePath": "staticwebassets/images/Xp_6.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/Xp_8.jpg",
+      "PackagePath": "staticwebassets/images/Xp_8.jpg"
+    },
+    {
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/contact 8.51.00\u202FAM.png",
+      "PackagePath": "staticwebassets/images/contact 8.51.00\u202FAM.png"
     },
     {
       "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/garage_1.jpg",
@@ -109,36 +137,8 @@
       "PackagePath": "staticwebassets/images/miracle_4.jpg"
     },
     {
-      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/p_1.jpg",
-      "PackagePath": "staticwebassets/images/p_1.jpg"
-    },
-    {
-      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/p_2.jpg",
-      "PackagePath": "staticwebassets/images/p_2.jpg"
-    },
-    {
-      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/p_3.jpg",
-      "PackagePath": "staticwebassets/images/p_3.jpg"
-    },
-    {
-      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/p_4.jpg",
-      "PackagePath": "staticwebassets/images/p_4.jpg"
-    },
-    {
-      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/p_5.jpg",
-      "PackagePath": "staticwebassets/images/p_5.jpg"
-    },
-    {
-      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/p_6.jpg",
-      "PackagePath": "staticwebassets/images/p_6.jpg"
-    },
-    {
-      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/p_7.jpg",
-      "PackagePath": "staticwebassets/images/p_7.jpg"
-    },
-    {
-      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/p_8.jpg",
-      "PackagePath": "staticwebassets/images/p_8.jpg"
+      "Id": "/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/wwwroot/images/xp_7.jpg",
+      "PackagePath": "staticwebassets/images/xp_7.jpg"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RealEstateRCL.Microsoft.AspNetCore.StaticWebAssets.props",

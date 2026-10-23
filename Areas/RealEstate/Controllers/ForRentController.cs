@@ -1,8 +1,7 @@
-using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-
-using AppContractsSCO.Services.Logging;
 using AppContractsSCO.Models.Logging;
+using AppContractsSCO.Services.Logging;
+using Microsoft.AspNetCore.Mvc;
 
 namespace RealEstateRCL.Areas.RealEstate.Controllers
 {
