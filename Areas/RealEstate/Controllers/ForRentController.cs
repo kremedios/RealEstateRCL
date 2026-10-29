@@ -34,5 +34,34 @@ namespace RealEstateRCL.Areas.RealEstate.Controllers
             };
             return View(model);
         }
+
+
+
+
+        [HttpGet("Lenox")]
+        public async Task<IActionResult> Lenox()
+        {
+
+
+
+            //Update values in the model for this web page
+            //model.CountModel.PageHitCount = _pageHitService.GetPageHitCount("realEstate", "Keswick");
+
+            //Use service to log a page hit. This service will determine
+            //whether or not the page request is from a human or a bot and
+            //act accordingly.s
+            await _pageHitService.LogPageHitAsync("realEstate", "Lenox");
+
+            var model = new CountModel
+            {
+                PageHitCount = _pageHitService.GetPageHitCount("realEstate", "Lenox")
+            };
+            return View(model);
+        }
+
+
+
+
+
     }
 }

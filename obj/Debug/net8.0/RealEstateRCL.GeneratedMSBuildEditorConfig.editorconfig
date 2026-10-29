@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope = b-k4b6qbwawf
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUmVhbEVzdGF0ZS9WaWV3cy9Gb3JSZW50L0tlc3dpY2tfRm9yUmVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/Areas/RealEstate/Views/ForRent/Lenox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUmVhbEVzdGF0ZS9WaWV3cy9Gb3JSZW50L0xlbm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/Areas/RealEstate/Views/ForSale/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUmVhbEVzdGF0ZS9WaWV3cy9Gb3JTYWxlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,4 +60,8 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/Areas/RealEstate/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUmVhbEVzdGF0ZS9WaWV3cy9fVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/juderemedios/Documents/_KEN/projects/RCL_projects/RealEstateRCL/Areas/_Archive/LV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvX0FyY2hpdmUvTFYuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

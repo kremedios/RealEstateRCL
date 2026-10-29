@@ -1,0 +1,366 @@
+@*model Plumspaces.Areas.Rentals.Models.FormModel*@
+
+@{
+    ViewData["Title"] = "Lenox Village";
+}
+
+
+
+
+
+@{
+    string rent_amount = "$" + Model.RentAmount;// "$1900";
+    string carpet_cleaning_fee = "$" + Model.CarpetCleaningFee;
+    string pet_deposit = "$" + @Model.PetDeposit;
+    string availability = @Model.Availability;
+    string availabilityNotes = @Model.AvailabilityNotes;
+    string security_deposit = "$" + @Model.SecurityDeposit;
+    string zillow_fee = "$" + @Model.ZillowFee;
+}
+
+
+
+@section scripts {
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    lightGallery(document.getElementById('galleryLenoxVillage'), {
+        plugins: [lgThumbnail, lgZoom],
+        speed: 400,
+        thumbnail: true,
+        zoom: true
+    });
+});
+</script>
+}
+
+
+<div class="display-text-2 top-spacer">
+    <div>
+        <h4>Nashville at Lenox Village</h4>
+        <b>Rent:  @rent_amount per month</b><br />
+        <b>Lenox Village Townhome</b><br />
+        - Lenox Village is an <i>award-winning</i>,&nbsp; Nashville community nestled among tree-lined streets &amp; open green space<br />
+        - Great walking &amp; friendly neighborhood
+        <br />
+        <b>2612 Avery Park Drive</b><br />
+        <b>Nashville, Tennessee 37211</b>
+    </div>
+
+
+    <div>   
+       * Unfurnished Townhome: 2-stry, 3 bdrm, 2 1/2 bath        
+    </div>
+
+
+    <div>
+        * <span style="color:red;font-weight:bold">@availability</span>
+    </div>
+    <div>
+        * @availabilityNotes
+    </div>
+
+
+</div>
+
+
+
+<br/>
+
+
+
+
+
+
+<div role="main" class="main">
+    <div class="display-text-2">
+        <span style="color:blue">Click a pic--Zoom in &amp; out</span>
+    </div>
+
+    <div class="container">
+        
+<div id="galleryLenoxVillage" class="lg-gallery">
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/16_pic.jpg")"
+       data-sub-html="Half a block down from townhome on Avery Park Drive">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/16_pic.jpg")"
+             alt="Half a block down from townhome on Avery Park Drive" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/17_pic.jpg")"
+       data-sub-html="Walking friendly environment">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/17_pic.jpg")"
+             alt="Walking friendly environment" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/18_pic.jpg")"
+       data-sub-html="Tree-lined streets">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/18_pic.jpg")"
+             alt="Tree-lined streets" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/6203.jpg")"
+       data-sub-html="Stone covered front; Fantastic Parking: Free &amp; convenient street parking directly in front plus 2 private reserved spaces in back">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/6203.jpg")"
+             alt="Stone covered front; Fantastic Parking" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/jj_2.jpg")"
+       data-sub-html="Front door opening into living room showing beautiful view of front street">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/jj_2.jpg")"
+             alt="Front door opening into living room" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/6209.jpg")"
+       data-sub-html="View of back of residence showing private fenced yard &amp; 2 private reserved parking spaces. HOA lawn mowing service included.">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/6209.jpg")"
+             alt="Back of residence and parking" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/6212.jpg")"
+       data-sub-html="View down the street in front of the home">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/6212.jpg")"
+             alt="View down the street" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/6218.jpg")"
+       data-sub-html="Living room facing front door; transom over door provides additional natural light">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/6218.jpg")"
+             alt="Living room facing front door" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/6231.jpg")"
+       data-sub-html="Kitchen with stainless steel sink &amp; easy-care black appliances; pantry; laundry room">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/6231.jpg")"
+             alt="Kitchen and appliances" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/jj_3.jpg")"
+       data-sub-html="Dining area adjacent to kitchen; back door leads to private fenced yard">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/jj_3.jpg")"
+             alt="Dining area" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/jj_4.jpg")"
+       data-sub-html="Kitchen with laundry room to the right of refrigerator">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/jj_4.jpg")"
+             alt="Kitchen with laundry room" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/6249.jpg")"
+       data-sub-html="Downstairs powder room">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/6249.jpg")"
+             alt="Downstairs powder room" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/6250.jpg")"
+       data-sub-html="Upstairs private full master bathroom ensuite with dual sinks &amp; makeup table">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/6250.jpg")"
+             alt="Master bathroom ensuite" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/6258.jpg")"
+       data-sub-html="Upstairs full bathroom">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/6258.jpg")"
+             alt="Upstairs full bathroom" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/10.png")"
+       data-sub-html="Upstairs second bedroom">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/10.png")"
+             alt="Second bedroom" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/9_pic.png")"
+       data-sub-html="Upstairs third bedroom">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/9_pic.png")"
+             alt="Third bedroom" />
+    </a>
+
+    <a href="@Url.Content("~/images/rentals/lenoxvillage/jj_5.png")"
+       data-sub-html="Upstairs master bedroom with ceiling fan &amp; walk-in closet">
+        <img src="@Url.Content("~/images/rentals/lenoxvillage/jj_5.png")"
+             alt="Master bedroom" />
+    </a>
+
+</div>
+
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+<ul class="display-text-2" style="margin-top:0.75em">
+    <li>
+        Located in the <b>award-winning</b>, smart growth, master-planned Nashville community of <b>Lenox Village</b>
+    </li>
+    <li>
+        Quiet street
+    </li>
+    <li>
+        Convenient dining, shopping, &amp; professional services
+    </li>
+    <li>
+        Parks &amp; a Tot lot
+    </li>
+    <li>
+        Townhouse -- NO neighbors above or below
+    </li>
+    <li>
+        All bedrooms are upstairs.
+    </li>
+    <li>
+        <b>Fantastic Parking</b>: 2 reserved parking spaces at rear of townhouse plus free &amp; convenient street parking directly in front.
+    </li>
+    <li>
+        1208 sq ft
+    </li>
+    <li>
+        <i>Private, in-unit, dedicated</i> laundry room with full-sized washer &amp; dryer.
+    </li>
+    <li>
+        Half bathroom on ground floor.
+    </li>
+    <li>
+        Hardwood floors downstairs, carpet upstairs
+    </li>
+    <li>
+        Kitchen with easy-care black appliances plus separate food pantry.
+    </li>
+    <li>
+        Small, private fenced backyard. Front yard maintenance included.
+    </li>
+    <li>
+        ALL utilities/services are responsibility of tenant.
+    </li>
+    <li>
+        NO smoking.
+    </li>
+    <li>
+        Proof of Renters' Insurance required.
+    </li>
+
+    
+    <li>
+        Pet approval on a case-by-case basis--maximum of 2 pets. <span style="font-weight:600">@pet_deposit</span> non-refundable pet deposit (additional deposit may be required for additional pet).
+    </li>
+    
+
+    <li>
+        <span style="font-weight:600">@carpet_cleaning_fee</span> upfront, non-refundable deposit used for carpet cleaning upon end of tenancy
+    </li>
+    <li>
+        Security Deposit: <span style="font-weight:600">@security_deposit</span>
+    </li>
+
+
+
+    <li>
+        One-year lease
+    </li>
+
+    <li>
+        Credit Report &amp; Background Check will be required <span style="font-size:small">
+            (through Zillow.com, property management company
+            partnered with Experian and Checkr, ~ <span style="font-weight:600">@zillow_fee</span> -- verify all fees at Zillow.com <i>Online Applications</i>)
+        </span> <u>
+            Complete the Zillow.com <i>Online Application</i>
+            only AFTER you've been approved in our Preliminary Rental Application.
+        </u>
+    </li>
+
+</ul>
+
+
+
+
+
+<!-- ================================================================================ -->
+<!-- Contact us section - begin -->
+<!-- ================================================================================ -->
+<div style="background-color:lightgray;border-color:gray;border:outset;padding:0.2em">
+
+
+
+    <div class="display-text-2" style="padding-top:0.3em">
+        <div>The property owner &amp; contact is an individual.</div>
+
+        For more information email us at :
+    
+        <img src="@Url.Content("~/images/rentals/plumrentalsusa.png")"
+             alt="contact email" />
+    </div>
+
+
+
+</div>
+
+
+
+<form asp-area="Rentals"
+      asp-controller="Home"
+      asp-action="PrelimRentalApp"
+      method="post">
+      
+    @Html.AntiForgeryToken()
+
+    <div>
+        <input type="hidden" asp-for="HF_plumrentals_property_address" value="2612 Avery Park Dr, Nashville TN 37211" />
+        <input type="hidden" asp-for="HF_plumrentals_property_id" value="LV" />
+    </div>
+
+
+
+    <div style="background-color:lightgray;border-color:gray;border:outset;padding:0.2em;margin-top:2em">
+
+        <div class="display-text-2" style="padding-top:0.3em">
+            We are now collecting applicants for consideration.  Please complete the <b>Preliminary Rental Application</b> if you wish to be put on the list to be considered.
+            There is <b>NO</b> fee for the <b>Preliminary Rental Application</b>.
+        </div>
+
+        <div class="display-text-2" style="padding-top:0.3em">
+            To submit a <b>Preliminary Rental Application</b>, click the following button, which will direct you to our information submittal page.
+        </div>
+
+        <!--<div>look here:  @*url_Brentwood*@</div>-->
+
+        <!--input type="submit" value="Preliminary Rental Application" / -->
+        <button type="submit">Preliminary Rental Application</button>
+
+    </div>
+
+</form>
+
+
+
+
+
+
+<!-- ============================================================================================================-->
+<!-- Items to be placed on external (to PlumRentals) web page - end -->
+<!-- ============================================================================================================-->
+<!-- ================================================================================ -->
+<!-- Preliminary Rental Application section - end -->
+<!-- ================================================================================ -->
+
+
+
+<footer>
+    <div class="display-text-2" style="opacity:0.65;font-size:0.9em;">
+    
+</div>
+    <div class="footer">
+        LV...260207:1607
+       <br/>
+       @Model.PageHitCount... @Model.LastHitDatetime
+    </div>
+</footer>
+
+
+
+
+

@@ -17,6 +17,11 @@
   <RazorCompileOnPublish>true</RazorCompileOnPublish>
 </PropertyGroup>
 
+
+  <ItemGroup>
+    <Compile Remove="_Archive/**/*cs" />
+  </ItemGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\..\shared_common_objects_library_projects\AppContractsSCO\AppContractsSCO.csproj" />    
   </ItemGroup>
